@@ -24,7 +24,7 @@ namespace Store.Tests
             Assert.True(actual);
         }
         [Fact]
-        public void IsIsbn_With13Numbers_ReturnFalse()
+        public void IsIsbn_With13Numbers_ReturnTrue()
         {
             bool actual = Book.IsIsbn("ISBN 123-456-789 0123");
             Assert.True(actual);
